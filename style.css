@@ -443,6 +443,48 @@ body.dark-mode .buy-button {
     height: 100%;
 }
 
+.size-selector-wrap {
+    margin-top: 30px;
+}
+
+.size-btn {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--text);
+    padding: 12px 20px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 60px;
+    text-transform: uppercase;
+}
+
+.size-btn:hover {
+    border-color: var(--text);
+    background: rgba(var(--text-rgb), 0.05);
+}
+
+.size-btn.active {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Add RGB variable for hover effect if not present */
+:root {
+    --text-rgb: 0, 0, 0;
+    /* Default light mode */
+}
+
+.dark-mode {
+    --text-rgb: 255, 255, 255;
+}
+
 /* --- Cart --- */
 .cart-sidebar {
     position: fixed;
