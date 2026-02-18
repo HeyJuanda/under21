@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>under21 | Store</title>
-    <link rel="shortcut icon" href="src/u21.svg">
+    <link rel="shortcut icon" href="/src/u21.svg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
     <header>
         <nav>
-            <div class="logo-container" onclick="showView('home')">
-                <img src="src/under21.svg" class="logo-img" alt="Under21">
+            <div class="logo-container">
+                <img src="/src/under21.svg" class="logo-img" alt="Under21">
             </div>
             <div class="nav-links">
                 <!-- Links injected by JS -->
@@ -57,20 +57,21 @@
         </nav>
     </header>
 
-    <div id="view-home" class="view-section">
-        <section class="hero">
-            <div class="hero-content">
-                <img src="src/under21.svg" class="hero-logo" alt="Under 21">
-                <p data-i18n="hero-p">A Statement in Minimalist Defiance. Vol 01.</p>
-                <div class="hero-actions">
-                    <!-- Injected by JS -->
-                </div>
+    <div id="view-cream" class="view-section">
+        <section id="catalog" class="catalog-section" style="padding: 100px 5%; max-width: 1400px; margin: 0 auto;">
+            <div class="section-title" style="margin-bottom: 60px;">
+                <h2 style="font-size: 11px; letter-spacing: 0.3em; opacity: 0.4; text-transform: uppercase;">Collections
+                </h2>
+                <h3 style="font-family: 'Outfit', sans-serif; font-size: 42px; margin: 10px 0; font-weight: 700;">
+                    CREAM
+                    ERA</h3>
+                <p style="font-size: 13px; opacity: 0.5;">Elevating the standards.</p>
+            </div>
+            <div id="product-grid-cream" class="product-grid">
+                <!-- Product cards injected by JS -->
             </div>
         </section>
     </div>
-
-    <!-- Base content -->
-
 
     <!-- Product Detail Modal -->
     <div id="product-modal" class="modal">
@@ -105,7 +106,7 @@
     <!-- Toast Notification -->
     <div id="toast"></div>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 
 </body>
 
